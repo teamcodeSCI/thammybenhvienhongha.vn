@@ -1,0 +1,82 @@
+.service_dhh_2_0_0 {
+    background: url(../images/service-bg.jpg);
+    padding: 30px 0;
+    &__header {
+        color: #5B2F9E;
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__item {
+        width: 32%;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__footer {
+        text-align: center;
+        margin-top: 20px;
+        button {
+            background: #5B2F9E;
+            border-radius: 20px;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+    &__desc {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    @media(max-width:1440px) {
+        &__box {
+            width: 80%;
+            margin: 0 auto
+        }
+        &__item {
+            width: 31%;
+        }
+    }
+    @media(max-width: 1200px) {
+        &__box {
+            width: 100%;
+        }
+    }
+    @media(max-width: 767px) {
+        padding: 20px 0;
+        &__header {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+        &__box {
+            gap: 10px;
+        }
+        &__footer {
+            margin-top: 10px;
+            button {
+                font-size: 14px;
+                padding: 5px 10px;
+            }
+        }
+        &__desc {
+            font-size: 14px;
+        }
+    }
+    @media(max-width: 320px) {
+        &__item {
+            width: 48%;
+        }
+    }
+}

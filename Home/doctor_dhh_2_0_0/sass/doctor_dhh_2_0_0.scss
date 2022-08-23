@@ -1,0 +1,100 @@
+.doctor_dhh_2_0_0 {
+    padding: 30px 0;
+    &__box {
+        position: relative;
+    }
+    &__img {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__item {
+        position: relative;
+    }
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        width: 50%;
+        color: #fff;
+        span {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-left: 10px;
+            font-size: 16px;
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &__tabs {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        display: flex;
+        gap: 10px;
+        z-index: 1;
+        width: 50%;
+    }
+    &__tab {
+        border: 2px solid #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        img {
+            border-radius: 50%;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    @media(max-width: 1200px) {
+        &__tabs {
+            top: 20px;
+        }
+    }
+    @media(max-width: 912px) {
+        &__text {
+            top: 60%;
+            left: 30px;
+        }
+    }
+    @media(max-width: 767px) {
+        padding: 20px 0;
+        &__tabs {
+            position: unset;
+            justify-content: center;
+            width: 70%;
+            margin: 0 auto 10px;
+        }
+        &__img {
+            display: none;
+        }
+        &__text {
+            background: url(../images/doctor-bg.jpg) center 0;
+            position: unset;
+            padding: 10px;
+            transform: unset;
+            width: 100%;
+            border-radius: 20px;
+            span {
+                font-size: 17px;
+            }
+            ul {
+                margin: 0;
+                font-size: 13px;
+            }
+        }
+    }
+    @media(max-width: 320px) {
+        &__tabs {
+            width: 100%;
+        }
+    }
+}
