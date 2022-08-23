@@ -37,8 +37,7 @@
   margin-bottom: 5px;
 }
 .header_dhh_2_0_0__menuItem:hover .header_dhh_2_0_0__dropdown {
-  visibility: visible;
-  opacity: 1;
+  display: block;
 }
 .header_dhh_2_0_0__menuTitle {
   font-size: 14px;
@@ -67,8 +66,7 @@
 }
 .header_dhh_2_0_0__dropdown {
   transition: all 0.2s linear;
-  visibility: hidden;
-  opacity: 0;
+  display: none;
   position: absolute;
   right: 0;
   margin-top: 10px;
@@ -182,7 +180,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    background: linear-gradient(90deg, rgb(91, 47, 158) 0%, rgb(182, 31, 126) 19%, rgb(175, 32, 129) 38%, rgb(91, 47, 158) 99%);
+    background: linear-gradient(rgb(91, 47, 158) 0%, rgb(182, 31, 126) 19%, rgb(175, 32, 129) 38%, rgb(91, 47, 158) 99%);
     width: 250px;
     z-index: 20;
   }
@@ -205,6 +203,9 @@
     width: 100%;
   }
   .header_dhh_2_0_0__menuItem:hover .header_dhh_2_0_0__dropdown {
+    display: none;
+  }
+  .header_dhh_2_0_0__menuItem.open .header_dhh_2_0_0__dropdown {
     display: block;
   }
   .header_dhh_2_0_0__menuItem:last-child {
@@ -214,13 +215,10 @@
     width: 100%;
     display: none;
     position: unset;
-    visibility: visible;
-    opacity: 1;
     padding: 0;
     box-shadow: unset;
     border: none;
     margin: 0;
-    background: #0055A4;
     border-radius: 0;
   }
   .header_dhh_2_0_0__dropdownBox {
@@ -238,17 +236,17 @@
     color: #fff;
   }
   .header_dhh_2_0_0__dropdownCate ul li a {
-    color: #fff;
+    color: black;
   }
   .header_dhh_2_0_0__dropdownTitle {
-    color: #fff;
+    color: black;
   }
   .header_dhh_2_0_0__btnGroup {
     display: flex;
     align-items: center;
   }
   .header_dhh_2_0_0__btnGroup a {
-    background: #e43c3b;
+    border: 1px solid white;
     width: 35px;
     height: 35px;
     display: inline-flex;
@@ -262,14 +260,14 @@
     height: 20px;
   }
   .header_dhh_2_0_0__btnGroup button {
-    background: #00abe5;
+    background: rgba(238, 238, 238, 0);
+    border: 1px solid white;
     width: 35px;
     height: 35px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: none;
     cursor: pointer;
   }
   .header_dhh_2_0_0__btnGroup button img {

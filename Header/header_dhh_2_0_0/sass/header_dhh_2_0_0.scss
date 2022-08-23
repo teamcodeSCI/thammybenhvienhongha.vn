@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(90deg, rgba(91, 47, 158, 1) 0%, rgba(182, 31, 126, 1) 19%, rgba(175, 32, 129, 1) 38%, rgba(91, 47, 158, 1) 99%);
+    background: linear-gradient(90deg, rgba(91,47,158,1) 0%, rgba(182,31,126,1) 19%, rgba(175,32,129,1) 38%, rgba(91,47,158,1) 99%);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     padding: 20px 0 10px;
     z-index: 9999;
@@ -35,11 +35,11 @@
         &Item {
             &:hover {
                 .header_dhh_2_0_0__dropdown {
-                    visibility: visible;
-                    opacity: 1;
+                    display: block;
                 }
             }
         }
+
         &Title {
             font-size: 14px;
             text-transform: uppercase;
@@ -68,8 +68,7 @@
     }
     &__dropdown {
         transition: all 0.2s linear;
-        visibility: hidden;
-        opacity: 0;
+        display: none;
         position: absolute;
         right: 0;
         margin-top: 10px;
@@ -184,7 +183,7 @@
             left: 0;
             top: 0;
             bottom: 0;
-            background: linear-gradient(90deg, rgba(91, 47, 158, 1) 0%, rgba(182, 31, 126, 1) 19%, rgba(175, 32, 129, 1) 38%, rgba(91, 47, 158, 1) 99%);
+            background: linear-gradient( rgba(91,47,158,1) 0%, rgba(182,31,126,1) 19%, rgba(175,32,129,1) 38%, rgba(91,47,158,1) 99%);
             width: 250px;
             z-index: 20;
         }
@@ -204,11 +203,16 @@
             }
             &Item {
                 width: 100%;
+            }
+            &Item {
                 &:hover {
                     .header_dhh_2_0_0__dropdown {
-                        display: block;
+                        display: none;
                     }
                 }
+            }
+            &Item.open .header_dhh_2_0_0__dropdown{
+                display: block;
             }
             &Item:last-child {
                 display: none;
@@ -218,13 +222,10 @@
             width: 100%;
             display: none;
             position: unset;
-            visibility: visible;
-            opacity: 1;
             padding: 0;
             box-shadow: unset;
             border: none;
             margin: 0;
-            background: #0055A4;
             border-radius: 0;
             &Box {
                 flex-direction: column;
@@ -242,20 +243,21 @@
                             }
                         }
                         a {
-                            color: #fff;
+                            color: black;
                         }
                     }
                 }
             }
             &Title {
-                color: #fff;
+                color: black;
             }
         }
         &__btnGroup {
             display: flex;
             align-items: center;
             a {
-                background: #e43c3b;
+                // background: #e43c3b;
+                border: 1px solid white;
                 width: 35px;
                 height: 35px;
                 display: inline-flex;
@@ -269,14 +271,14 @@
                 }
             }
             button {
-                background: #00abe5;
+                background: #eee0;
+                border: 1px solid white;
                 width: 35px;
                 height: 35px;
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: 50%;
-                border: none;
                 cursor: pointer;
                 img {
                     width: 20px;
