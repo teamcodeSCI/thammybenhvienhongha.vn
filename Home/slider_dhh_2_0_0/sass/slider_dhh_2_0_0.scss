@@ -1,32 +1,105 @@
-.slider_dhh_2_0_0 {
-    position: relative;
-    &__box {
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-    }
-    &__btn {
-        display: flex;
-        justify-content: center;
-        position: absolute;
+.slide_dhh_2_0_0 {
+    .slider {
+        overflow: hidden;
+        position: relative;
         width: 100%;
-        left: 0;
-        bottom: 20px;
-        button {
-            cursor: pointer;
-            display: block;
-            margin-left: 5px;
-            width: 10px;
-            height: 10px;
-            border: none;
-            background: #00abe5;
-            border-radius: 50%;
-            padding: 0;
+        height: 300px;
+        padding-bottom: 43.25% !important;
+        &__item {
+            background-size: cover;
+            position: absolute;
+            left: 100%;
+            width: 100%;
+            top: 0px;
+            height: auto;
         }
-        .btn--active {
-            background: #ff2c02;
+        &Nav {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 100%;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &Prev {
+            position: relative;
+            float: left;
+            left: 50px;
+        }
+        &Next {
+            position: relative;
+            float: right;
+            right: 50px;
+        }
+        &Next img,
+        &Prev img {
+            width: 32px;
         }
     }
+    .responsive-16by9 {
+        padding-bottom: 56.25%;
+    }
+    .responsive {
+        position: relative;
+        display: block;
+        height: 0;
+        padding: 0;
+        padding-bottom: 0px;
+        overflow: hidden;
+    }
+    .responsive__item {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    @media (max-width:767px) {
+        max-width: 428px;
+        margin: 0 auto;
+        .slider {
+            padding-bottom: 178.12% !important;
+        }
+    }
+}
+
+@keyframes slideIn {
+    100% {
+        left: 0;
+    }
+}
+
+.slideInRight {
+    left: -100%;
+    animation: slideIn 1s forwards;
+}
+
+.slideInLeft {
+    left: 100%;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideOutLeft {
+    100% {
+        left: -100%;
+    }
+}
+
+.slideOutLeft {
+    animation: slideOutLeft 1s forwards;
+}
+
+@keyframes slideOutRight {
+    100% {
+        left: 100%;
+    }
+}
+
+.slideOutRight {
+    animation: slideOutRight 1s forwards;
 }
