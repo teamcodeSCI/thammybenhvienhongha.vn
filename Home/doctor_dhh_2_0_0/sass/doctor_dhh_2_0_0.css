@@ -1,100 +1,167 @@
 .doctor_dhh_2_0_0 {
   padding: 30px 0;
+  background: url(../images/doctor-bg.jpg);
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.2));
+}
+.doctor_dhh_2_0_0__header {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #B61F7E;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .doctor_dhh_2_0_0__box {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.doctor_dhh_2_0_0__video {
+  width: 29%;
   position: relative;
+}
+.doctor_dhh_2_0_0__video img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+.doctor_dhh_2_0_0__video span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.doctor_dhh_2_0_0__video span img {
+  width: 50%;
+  min-width: 30px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 50%;
+}
+.doctor_dhh_2_0_0__right {
+  width: 73%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+.doctor_dhh_2_0_0__detail {
+  display: flex;
+  gap: 15px;
+  border: 1px solid #B61F7E;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.doctor_dhh_2_0_0__img {
+  width: 40%;
 }
 .doctor_dhh_2_0_0__img img {
   width: 100%;
   height: auto;
   display: block;
 }
-.doctor_dhh_2_0_0__item {
-  position: relative;
-}
 .doctor_dhh_2_0_0__text {
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  transform: translateY(-50%);
-  width: 50%;
-  color: #fff;
+  width: 60%;
+  padding: 10px 10px 10px 0;
 }
 .doctor_dhh_2_0_0__text span {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
+  color: #B61F7E;
 }
 .doctor_dhh_2_0_0__text ul {
+  margin: 5px 0;
   list-style: none;
   padding: 0;
-  margin-left: 10px;
-  font-size: 16px;
-}
-.doctor_dhh_2_0_0__text ul li {
-  margin-bottom: 5px;
+  font-size: 14px;
 }
 .doctor_dhh_2_0_0__tabs {
-  position: absolute;
-  top: 40px;
-  left: 20px;
   display: flex;
-  gap: 10px;
-  z-index: 1;
-  width: 50%;
+  gap: 15px;
+  justify-content: space-between;
 }
 .doctor_dhh_2_0_0__tab {
-  border: 2px solid #fff;
-  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid transparent;
   cursor: pointer;
+  transition: all 0.2s linear;
+}
+.doctor_dhh_2_0_0__tab:hover {
+  border: 2px solid #B61F7E;
 }
 .doctor_dhh_2_0_0__tab img {
-  border-radius: 50%;
   width: 100%;
   height: auto;
   display: block;
 }
-@media (max-width: 1200px) {
-  .doctor_dhh_2_0_0__tabs {
-    top: 20px;
-  }
+.doctor_dhh_2_0_0__tab span {
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  bottom: 10px;
+  width: 100%;
+  color: #fff;
+}
+.doctor_dhh_2_0_0--active {
+  border: 2px solid #B61F7E;
 }
 @media (max-width: 912px) {
-  .doctor_dhh_2_0_0__text {
-    top: 60%;
-    left: 30px;
+  .doctor_dhh_2_0_0__tab span {
+    font-size: 12px;
   }
 }
 @media (max-width: 767px) {
   .doctor_dhh_2_0_0 {
     padding: 20px 0;
   }
+  .doctor_dhh_2_0_0__header {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .doctor_dhh_2_0_0__box {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .doctor_dhh_2_0_0__video {
+    order: 1;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .doctor_dhh_2_0_0__right {
+    width: 100%;
+    gap: 10px;
+  }
   .doctor_dhh_2_0_0__tabs {
-    position: unset;
-    justify-content: center;
-    width: 70%;
-    margin: 0 auto 10px;
+    gap: 10px;
+  }
+  .doctor_dhh_2_0_0__detail {
+    order: 1;
+    gap: 10px;
+    flex-direction: column;
   }
   .doctor_dhh_2_0_0__img {
-    display: none;
+    width: 100%;
   }
   .doctor_dhh_2_0_0__text {
-    background: url(../images/doctor-bg.jpg) center 0;
-    position: unset;
-    padding: 10px;
-    transform: unset;
     width: 100%;
-    border-radius: 20px;
+    padding: 0 10px 10px;
   }
   .doctor_dhh_2_0_0__text span {
     font-size: 17px;
   }
   .doctor_dhh_2_0_0__text ul {
-    margin: 0;
     font-size: 13px;
+  }
+  .doctor_dhh_2_0_0__tab span {
+    display: none;
   }
 }
 @media (max-width: 320px) {
-  .doctor_dhh_2_0_0__tabs {
+  .doctor_dhh_2_0_0__video {
     width: 100%;
   }
 }/*# sourceMappingURL=doctor_dhh_2_0_0.css.map */
