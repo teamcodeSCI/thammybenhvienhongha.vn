@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(90deg, rgba(91,47,158,1) 0%, rgba(182,31,126,1) 19%, rgba(175,32,129,1) 38%, rgba(91,47,158,1) 99%);
+    background: linear-gradient(90deg, rgba(91, 47, 158, 1) 5%, rgba(182, 31, 126, 1) 21%, rgba(91, 47, 158, 1) 80%);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     padding: 20px 0 10px;
     z-index: 9999;
@@ -39,17 +39,18 @@
                 }
             }
         }
-
         &Title {
-            font-size: 14px;
-            text-transform: uppercase;
+            font-size: 16px;
+            // text-transform: uppercase;
             font-weight: 600;
-            padding: 0 15px;
+            padding: 10px 15px;
             cursor: pointer;
             transition: all 0.2s linear;
             color: white;
             &:hover {
-                color: #01abe6;
+                // color: #01abe6;
+                background-color: #a90a93;
+                border-radius: 10px;
             }
         }
         &Btn {
@@ -60,7 +61,7 @@
             display: block;
             cursor: pointer;
             img {
-                width: 20px;
+                width: 25px;
                 height: auto;
                 display: block;
             }
@@ -90,10 +91,10 @@
             }
         }
         &Title {
-            text-transform: uppercase;
+            // text-transform: uppercase;
             font-size: 14px;
             text-transform: uppercase;
-            color: #307DAD;
+            color: #307dad;
             font-weight: 600;
             margin-bottom: 5px;
         }
@@ -107,7 +108,7 @@
                 padding-bottom: 8px;
                 margin-bottom: 7px;
                 &:hover a {
-                    color: #0056A4;
+                    color: #0056a4;
                 }
             }
         }
@@ -124,7 +125,7 @@
     &__bg {
         display: none;
     }
-    @media(max-width: 1200px) {
+    @media (max-width: 1200px) {
         .container {
             padding-right: 0;
             padding-left: 0;
@@ -183,7 +184,8 @@
             left: 0;
             top: 0;
             bottom: 0;
-            background: linear-gradient( rgba(91,47,158,1) 0%, rgba(182,31,126,1) 19%, rgba(175,32,129,1) 38%, rgba(91,47,158,1) 99%);
+            background: linear-gradient(rgba(91, 47, 158, 1) 5%, rgba(182, 31, 126, 1) 21%, rgba(91, 47, 158, 1) 80%);
+
             width: 250px;
             z-index: 20;
         }
@@ -192,17 +194,20 @@
             align-items: flex-start;
             &Title {
                 border: none;
-                border-bottom: 1px dashed #ccc;
                 padding: 10px;
                 &::after {
-                    content: 'ˇ';
+                    content: "ˇ";
                     position: absolute;
                     right: 10px;
                     font-size: 25px;
                 }
             }
+            &Title:hover {
+                background-color: unset;
+            }
             &Item {
                 width: 100%;
+                padding: 8px 0;
             }
             &Item {
                 &:hover {
@@ -211,7 +216,7 @@
                     }
                 }
             }
-            &Item.open .header_dhh_2_0_0__dropdown{
+            &Item.open .header_dhh_2_0_0__dropdown {
                 display: block;
             }
             &Item:last-child {
@@ -225,7 +230,7 @@
             padding: 0;
             box-shadow: unset;
             border: none;
-            margin: 0;
+            margin: 10px 0 0;
             border-radius: 0;
             &Box {
                 flex-direction: column;
@@ -287,7 +292,7 @@
             }
         }
     }
-    @media(max-width: 767px) {
+    @media (max-width: 767px) {
         .container {
             padding-right: 15px;
             padding-left: 15px;
@@ -305,7 +310,7 @@
             margin-top: 5px;
         }
     }
-    @media(max-width: 320px) {
+    @media (max-width: 320px) {
         &__flag {
             span {
                 font-size: 6px;

@@ -1,82 +1,129 @@
 .service_dhh_2_0_0 {
-    background: url(../images/service-bg.jpg);
-    padding: 30px 0;
-    &__header {
-        color: #5B2F9E;
-        font-size: 28px;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    &__box {
+    background: url(../images/service-bg.jpg?v=0) center 0;
+    background-size: 1920px;
+    &__main {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
+        justify-content: space-around;
+        align-items: flex-end;
     }
-    &__item {
-        width: 32%;
+    &__wrapper {
+        width: 45%;
+        padding: 30px 0;
+    }
+    &__modal {
+        width: 45%;
         img {
             width: 100%;
             height: auto;
             display: block;
         }
     }
-    &__footer {
+    &__header {
+        font-size: 20px;
+        font-weight: 600;
+        color: #727272;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        span {
+            display: block;
+            font-size: 26px;
+            color: #5B2F9E;
+        }
+    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__item {
+        width: 47%;
+        transition: all 0.2s linear;
+        &:hover {
+            transform: scale(1.02);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 16px;
+        }
+    }
+    &__btn {
         text-align: center;
         margin-top: 20px;
         button {
-            background: #5B2F9E;
-            border-radius: 20px;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
             font-size: 16px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            background: #5B2F9E;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.2s linear;
+            &:hover {
+                box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.7);
+            }
+        }
+        span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
         }
     }
-    &__desc {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-    @media(max-width:1440px) {
-        &__box {
-            width: 80%;
-            margin: 0 auto
+    @media(max-width: 1440px) {
+        &__wrapper {
+            width: 40%;
         }
-        &__item {
-            width: 31%;
+        &__modal {
+            width: 40%;
         }
     }
-    @media(max-width: 1200px) {
-        &__box {
-            width: 100%;
+    @media(max-width: 1180px) {
+        &__wrapper {
+            width: 45%;
+        }
+        &__modal {
+            width: 45%;
+        }
+    }
+    @media(max-width: 912px) {
+        &__wrapper {
+            width: 50%;
+        }
+        &__modal {
+            width: 50%;
         }
     }
     @media(max-width: 767px) {
-        padding: 20px 0;
+        &__wrapper {
+            width: 100%;
+            padding: 20px 0;
+        }
         &__header {
-            font-size: 17px;
+            font-size: 14px;
             margin-bottom: 10px;
+            span {
+                font-size: 17px;
+            }
         }
         &__box {
             gap: 10px;
         }
-        &__footer {
+        &__modal {
+            display: none;
+        }
+        &__btn {
             margin-top: 10px;
             button {
                 font-size: 14px;
-                padding: 5px 10px;
+                padding: 5px 20px;
             }
-        }
-        &__desc {
-            font-size: 14px;
-        }
-    }
-    @media(max-width: 320px) {
-        &__item {
-            width: 48%;
+            span {
+                font-size: 13px;
+            }
         }
     }
 }
