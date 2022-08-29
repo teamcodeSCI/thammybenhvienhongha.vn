@@ -36,7 +36,7 @@ const infoTemp = (props) => {
         <img width="366" height="356" src="${props.img}" alt="">
     </div>
     <div class="doctor_dhh_2_0_0__text">
-        <span>${props.name}</span>
+        <h2>${props.name}</h2>
         <ul>
            ${text}
         </ul>
