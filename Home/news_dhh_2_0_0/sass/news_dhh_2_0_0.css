@@ -54,6 +54,7 @@
   font-weight: 600;
   margin-bottom: 5px;
   transition: all 0.2s linear;
+  margin: 0 0 5px 0;
 }
 .news_dhh_2_0_0__title:hover {
   color: #461396;

@@ -63,10 +63,11 @@
     &__text {
         width: 60%;
         padding: 10px 10px 10px 0;
-        span {
+        h2 {
             font-size: 20px;
             font-weight: 600;
             color: #B61F7E;
+            margin: 0;
         }
         ul {
             margin: 5px 0;
@@ -148,8 +149,9 @@
         &__text {
             width: 100%;
             padding: 0 10px 10px;
-            span {
+            h2 {
                 font-size: 17px;
+                margin: 0;
             }
             ul {
                 font-size: 13px;

@@ -39,6 +39,7 @@
   gap: 20px;
 }
 .service_dhh_2_0_0__item {
+  margin: 0;
   width: 47%;
   transition: all 0.2s linear;
 }

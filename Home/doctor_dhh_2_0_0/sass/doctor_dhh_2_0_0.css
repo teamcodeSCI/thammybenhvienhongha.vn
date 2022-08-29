@@ -65,10 +65,11 @@
   width: 60%;
   padding: 10px 10px 10px 0;
 }
-.doctor_dhh_2_0_0__text span {
+.doctor_dhh_2_0_0__text h2 {
   font-size: 20px;
   font-weight: 600;
   color: #B61F7E;
+  margin: 0;
 }
 .doctor_dhh_2_0_0__text ul {
   margin: 5px 0;
@@ -150,8 +151,9 @@
     width: 100%;
     padding: 0 10px 10px;
   }
-  .doctor_dhh_2_0_0__text span {
+  .doctor_dhh_2_0_0__text h2 {
     font-size: 17px;
+    margin: 0;
   }
   .doctor_dhh_2_0_0__text ul {
     font-size: 13px;
