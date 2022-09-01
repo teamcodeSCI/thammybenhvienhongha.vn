@@ -30,11 +30,16 @@
 }
 .basis_dhh_2_0_0__img {
   width: 50%;
+  overflow: hidden;
 }
 .basis_dhh_2_0_0__img img {
   width: 100%;
   height: auto;
   display: block;
+  transition: all 0.2s linear;
+}
+.basis_dhh_2_0_0__img img:hover {
+  transform: scale(1.05);
 }
 .basis_dhh_2_0_0__text {
   width: 50%;
@@ -99,11 +104,16 @@
 }
 .basis_dhh_2_0_0__item {
   width: 48%;
+  overflow: hidden;
 }
 .basis_dhh_2_0_0__item img {
   width: 100%;
   height: auto;
   display: block;
+  transition: all 0.2s linear;
+}
+.basis_dhh_2_0_0__item img:hover {
+  transform: scale(1.05);
 }
 @media (max-width: 820px) {
   .basis_dhh_2_0_0__text span {

@@ -41,9 +41,10 @@
 .service_dhh_2_0_0__item {
   margin: 0;
   width: 47%;
-  transition: all 0.2s linear;
+  border-radius: 16px;
+  overflow: hidden;
 }
-.service_dhh_2_0_0__item:hover {
+.service_dhh_2_0_0__item:hover img {
   transform: scale(1.02);
 }
 .service_dhh_2_0_0__item img {
@@ -51,6 +52,29 @@
   height: auto;
   display: block;
   border-radius: 16px;
+  transition: all 0.2s linear;
+}
+.service_dhh_2_0_0__item a {
+  display: block;
+  position: relative;
+}
+.service_dhh_2_0_0__desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+.service_dhh_2_0_0__desc span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #B61F7E;
+  text-transform: uppercase;
+}
+.service_dhh_2_0_0__desc img {
+  width: 13px;
 }
 .service_dhh_2_0_0__btn {
   text-align: center;
@@ -117,6 +141,12 @@
   .service_dhh_2_0_0__modal {
     display: none;
   }
+  .service_dhh_2_0_0__desc span {
+    font-size: 14px;
+  }
+  .service_dhh_2_0_0__desc img {
+    width: 9px;
+  }
   .service_dhh_2_0_0__btn {
     margin-top: 10px;
   }
@@ -126,5 +156,13 @@
   }
   .service_dhh_2_0_0__btn span {
     font-size: 13px;
+  }
+}
+@media (max-width: 320px) {
+  .service_dhh_2_0_0__desc {
+    padding: 5px 10px;
+  }
+  .service_dhh_2_0_0__desc span {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=service_dhh_2_0_0.css.map */
