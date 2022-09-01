@@ -1,0 +1,39 @@
+.post_dhh_2_0_0 {
+    padding: 20px 0 30px;
+    &__header {
+        font-size: 24px;
+        font-weight: 600;
+        color: #B61F7E;
+        margin: 0 0 15px 0
+    }
+    &__sub {
+        font-style: italic;
+        color: #5B2F9E;
+        text-align: justify;
+        margin: 0 0 10px 0
+    }
+    &__main {
+        text-align: justify;
+    }
+    &__img {
+        margin: 0 0 10px 0;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media(max-width: 767px) {
+        padding: 15px 0;
+        &__header {
+            font-size: 17px;
+            margin: 0 0 10px 0;
+        }
+        &__sub {
+            font-size: 14px;
+        }
+        &__main {
+            font-size: 14px;
+        }
+    }
+}

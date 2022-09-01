@@ -1,0 +1,17 @@
+.breadcumb_dhh_2_0_0 {
+  margin: 30px 0 0;
+}
+.breadcumb_dhh_2_0_0__directional {
+  color: #bcbcbc;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #bcbcbc;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .breadcumb_dhh_2_0_0 {
+    margin: 20px 0 0;
+  }
+}/*# sourceMappingURL=breadcumb_dhh_2_0_0.css.map */
