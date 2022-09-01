@@ -1,16 +1,15 @@
 .breadcumb_dhh_2_0_0 {
+    margin: 30px 0 0;
     &__directional {
         color: #bcbcbc;
         text-transform: uppercase;
         padding-bottom: 7px;
         border-bottom: 1px solid #bcbcbc;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 500;
         margin: 0;
     }
-    @media (max-width: 320px) {
-        &__directional {
-            font-size: 14px;
-        }
+    @media (max-width: 767px) {
+        margin: 20px 0 0;
     }
 }
