@@ -1,0 +1,98 @@
+.sidebar_dhh_2_0_0 {
+    padding: 20px 0;
+    &__form {
+        background: #b61f7e;
+        padding: 15px;
+    }
+    &__logo {
+        text-align: center;
+        margin-bottom: 5px;
+        img {
+            display: block;
+            height: auto;
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+    article {
+        input {
+            width: 100%;
+            padding: 8px 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+    }
+    select {
+        width: 100%;
+        padding: 8px 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    &__btn {
+        margin-top: 10px;
+        padding: 5px 10px;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        color: #5b2f9e;
+        background-color: #ffd1ee;
+        cursor: pointer;
+        font-weight: 500;
+    }
+    &__box-2 {
+        padding: 20px 0;
+    }
+    &__title {
+        font-size: 25px;
+        font-weight: 600;
+        color: #b61F7E;
+        text-align: left;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #b61F7E;
+    }
+    &__item {
+        display: flex;
+        gap: 10px;
+        margin: 20px 0 0;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        align-items: center;
+        position: relative;
+    }
+    &__pic {
+        width: 50%;
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__detail {
+        width: 50%;
+    }
+    &__des {
+        padding: 10px 0;
+        font-weight: 600;
+        text-align: justify;
+        color: #000;
+    }
+    &__box-3 {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    @media (max-width: 1180px) {
+        &__title {
+            font-size: 23px;
+        }
+    }
+    @media(max-width: 992px) {
+        display: none;
+    }
+}
