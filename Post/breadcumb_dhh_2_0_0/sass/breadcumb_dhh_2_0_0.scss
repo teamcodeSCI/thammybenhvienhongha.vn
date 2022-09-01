@@ -1,0 +1,16 @@
+.breadcumb_dhh_2_0_0 {
+    &__directional {
+        color: #bcbcbc;
+        text-transform: uppercase;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #bcbcbc;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0;
+    }
+    @media (max-width: 320px) {
+        &__directional {
+            font-size: 14px;
+        }
+    }
+}
