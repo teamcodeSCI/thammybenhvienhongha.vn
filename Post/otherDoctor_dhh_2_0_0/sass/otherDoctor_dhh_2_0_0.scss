@@ -1,0 +1,36 @@
+.otherDoctor_dhh_2_0_0 {
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    &__item {
+        background: #ebdeef;
+    }
+    &__img {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__info {
+        padding: 10px;
+        text-align: center;
+    }
+    &__position {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    &__name {
+        font-weight: 600;
+        color: #5b2f9e;
+    }
+    @media(max-width:767px) {
+        padding: 15px 0;
+        gap: 10px;
+        flex-wrap: wrap;
+        &__item {
+            width: 48%;
+        }
+    }
+}
