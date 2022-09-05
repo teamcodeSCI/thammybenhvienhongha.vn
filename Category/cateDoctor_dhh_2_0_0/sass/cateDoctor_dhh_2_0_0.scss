@@ -10,12 +10,18 @@
         width: 31%;
         display: flex;
         flex-direction: column;
+        cursor: pointer;
+    }
+    &__top img:hover {
+        transform: scale(1.05);
     }
     &__top {
+        overflow: hidden;
         img {
             display: block;
             width: 100%;
             height: auto;
+            transition: all 0.2s linear;
         }
     }
     &__bot {
@@ -33,6 +39,10 @@
         font-weight: bold;
         font-size: 20px;
         margin: 0;
+        transition: all 0.2s linear;
+    }
+    &__name:hover {
+        color: #b61f7e;
     }
     &__list {
         padding: 0;
@@ -54,13 +64,9 @@
         }
         &__bot {
             padding: 10px;
-            ul {
-                font-size: 14px;
-                margin: 5px 0;
-            }
         }
         &__name {
-            font-size: 17px;
+            font-size: 18px;
         }
     }
     @media (max-width: 375px) {

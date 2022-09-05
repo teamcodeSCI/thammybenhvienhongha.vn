@@ -20,11 +20,16 @@
     }
     &__pic {
         position: relative;
+        overflow: hidden;
         img {
             width: 100%;
             height: auto;
             display: block;
             position: relative;
+            transition: all 0.2s linear;
+        }
+        img:hover {
+            transform: scale(1.05);
         }
     }
     &__note {
@@ -39,6 +44,10 @@
         font-weight: 600;
         color: #b61F7E;
         padding: 10px 0 0;
+        transition: all 0.2s linear;
+    }
+    &__text:hover {
+        color: #461396;
     }
     &__des {
         font-size: 14px;

@@ -21,12 +21,17 @@
 }
 .newsTop_dhh_2_0_0__pic {
   position: relative;
+  overflow: hidden;
 }
 .newsTop_dhh_2_0_0__pic img {
   width: 100%;
   height: auto;
   display: block;
   position: relative;
+  transition: all 0.2s linear;
+}
+.newsTop_dhh_2_0_0__pic img:hover {
+  transform: scale(1.05);
 }
 .newsTop_dhh_2_0_0__note {
   color: #fff;
@@ -40,6 +45,10 @@
   font-weight: 600;
   color: #b61F7E;
   padding: 10px 0 0;
+  transition: all 0.2s linear;
+}
+.newsTop_dhh_2_0_0__text:hover {
+  color: #461396;
 }
 .newsTop_dhh_2_0_0__des {
   font-size: 14px;

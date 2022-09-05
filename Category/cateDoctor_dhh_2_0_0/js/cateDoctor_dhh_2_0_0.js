@@ -47,13 +47,12 @@ const cateDoctor_dhh_2_0_0 = [{
       </ul>`,
     },
 ];
-const doctorURL = `Category/cateDoctor_dhh_2_0_0/`
 let HTML = "";
 cateDoctor_dhh_2_0_0.forEach(function(doctor) {
     HTML += `
-    <div class="cateDoctor_dhh_2_0_0__item">
+    <a class="cateDoctor_dhh_2_0_0__item">
     <div class="cateDoctor_dhh_2_0_0__top">
-        <img width="372" height="384" src="${doctorURL}${doctor.img}" alt="">
+        <img width="372" height="384" src="${doctor.img}" alt="">
     </div>
     <div class="cateDoctor_dhh_2_0_0__bot">
         <p class="cateDoctor_dhh_2_0_0__name">
@@ -61,7 +60,7 @@ cateDoctor_dhh_2_0_0.forEach(function(doctor) {
         </p>
         ${doctor.profile}
     </div>
-</div>
+</a>
 `;
 });
 document.getElementById("cateDoctor_dhh_2_0_0__box").innerHTML = HTML;

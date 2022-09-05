@@ -6,6 +6,7 @@
     }
     &__logo {
         text-align: center;
+        padding-bottom: 5px;
         img {
             display: block;
             height: auto;
@@ -64,10 +65,15 @@
     &__pic {
         width: 50%;
         position: relative;
+        overflow: hidden;
         img {
             width: 100%;
             height: auto;
             display: block;
+            transition: all 0.2s linear;
+        }
+        img:hover {
+            transform: scale(1.05);
         }
     }
     &__detail {
@@ -76,8 +82,11 @@
     &__des {
         padding: 10px;
         font-weight: 600;
-        text-align: justify;
         color: #000;
+        transition: all 0.2s linear;
+    }
+    &__des:hover {
+        color: #461396;
     }
     &__time {
         padding-left: 10px;
@@ -92,6 +101,9 @@
         &__title {
             font-size: 18px;
         }
+    }
+    @media(max-width:992px) {
+        display: none;
     }
     @media (max-width: 767px) {
         padding: 15px 0;

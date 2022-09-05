@@ -21,11 +21,16 @@
 .newsList_dhh_2_0_0__pic {
   width: 40%;
   position: relative;
+  overflow: hidden;
 }
 .newsList_dhh_2_0_0__pic img {
   width: 100%;
   height: auto;
   display: block;
+  transition: all 0.2s linear;
+}
+.newsList_dhh_2_0_0__pic img:hover {
+  transform: scale(1.05);
 }
 .newsList_dhh_2_0_0__note {
   color: #fff;
@@ -43,6 +48,10 @@
   font-weight: 600;
   text-align: justify;
   color: #b61F7E;
+  transition: all 0.2s linear;
+}
+.newsList_dhh_2_0_0__text:hover {
+  color: #461396;
 }
 .newsList_dhh_2_0_0__time {
   position: absolute;

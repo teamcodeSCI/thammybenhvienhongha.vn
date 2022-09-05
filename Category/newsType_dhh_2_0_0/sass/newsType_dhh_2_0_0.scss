@@ -21,10 +21,15 @@
     &__pic {
         width: 100%;
         position: relative;
+        overflow: hidden;
         img {
             width: 100%;
             height: auto;
             display: block;
+            transition: all 0.2s linear;
+        }
+        img:hover {
+            transform: scale(1.05);
         }
     }
     &__note {
@@ -37,10 +42,18 @@
     }
     &__text {
         font-weight: 600;
+        transition: all 0.2s linear;
+    }
+    &__text:hover {
+        color: #461396;
     }
     &__text-1 {
         padding: 10px 10px 0px 10px;
         color: #b61F7E;
+        transition: all 0.2s linear;
+    }
+    &__text-1:hover {
+        color: #461396;
     }
     &__des {
         font-size: 14px;
@@ -56,10 +69,15 @@
         padding-bottom: 15px;
     }
     &__image {
+        overflow: hidden;
         img {
             width: 100%;
             height: auto;
             display: block;
+            transition: all 0.2s linear;
+        }
+        img:hover {
+            transform: scale(1.05);
         }
     }
     @media (max-width: 1180px) {
