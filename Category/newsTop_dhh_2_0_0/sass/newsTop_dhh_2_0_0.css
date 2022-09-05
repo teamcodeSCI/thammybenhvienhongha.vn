@@ -31,7 +31,7 @@
 .newsTop_dhh_2_0_0__note {
   color: #fff;
   font-weight: 500;
-  padding: 5px 10px;
+  padding: 10px;
   background: #5B2F9E;
   position: absolute;
   bottom: 0;
@@ -39,6 +39,7 @@
 .newsTop_dhh_2_0_0__text {
   font-weight: 600;
   color: #b61F7E;
+  text-align: justify;
   padding: 10px 0 0;
 }
 .newsTop_dhh_2_0_0__des {
@@ -46,12 +47,9 @@
   padding: 10px 0;
 }
 @media (max-width: 767px) {
-  .newsTop_dhh_2_0_0 {
-    padding: 20px 0;
-  }
   .newsTop_dhh_2_0_0__box {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
   .newsTop_dhh_2_0_0__content {
     width: 100%;
@@ -59,7 +57,7 @@
   }
   .newsTop_dhh_2_0_0__detail {
     width: 100%;
-    gap: 10px;
+    gap: 15px;
   }
 }
 @media (max-width: 375px) {

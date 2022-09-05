@@ -31,7 +31,7 @@ const infoTemp = (props) => {
     for (let item of props.text) {
         text += ` <li>– ${item}</li>`
     }
-    return ` <div class="doctor_dhh_2_0_0__detail doctor_dhh_2_0_0--active">
+    return ` <div class="doctor_dhh_2_0_0__detail">
     <div class="doctor_dhh_2_0_0__img">
         <img width="366" height="356" src="${props.img}" alt="">
     </div>
