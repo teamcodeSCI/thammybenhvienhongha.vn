@@ -1,3 +1,27 @@
+@keyframes openModalAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes openBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .popCall_dhh_2_0_0 {
     position: fixed;
     left: 0;
@@ -8,6 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    animation: openBackground 0.4s;
     &__box {
         position: relative;
         background: #fff;
@@ -16,9 +41,10 @@
         width: 90%;
         max-width: 350px;
         border-radius: 6px;
+        animation: openModalAnimation 0.4s;
     }
     &__logo {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         img {
             display: block;
             width: 100%;
@@ -44,7 +70,7 @@
         color: #777;
         font-style: italic;
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     &__form {
         display: flex;
