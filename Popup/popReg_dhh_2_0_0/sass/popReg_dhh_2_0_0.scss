@@ -22,7 +22,7 @@
     }
 }
 
-.popCall_dhh_2_0_0 {
+.popReg_dhh_2_0_0 {
     position: fixed;
     left: 0;
     top: 0;
@@ -40,7 +40,7 @@
         margin-top: 10vh;
         padding: 20px 15px;
         width: 90%;
-        max-width: 350px;
+        max-width: 300px;
         border-radius: 6px;
         animation: openModalAnimation 0.4s;
     }
@@ -66,45 +66,58 @@
         }
     }
     &__desc {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 600;
-        color: #777;
-        font-style: italic;
+        color: #fff;
+        text-transform: uppercase;
         text-align: center;
-        margin-bottom: 10px;
+        background: #B61F7E;
+        padding: 5px;
     }
     &__form {
         display: flex;
         flex-direction: column;
-        width: 85%;
-        margin: 0 auto;
+        margin: 10px auto 0;
         gap: 10px;
+        textarea,
         input {
-            padding: 8px 10px;
+            padding: 5px 10px;
             font-size: 14px;
-            border-radius: 5px;
+            border-radius: 0px;
             border: 1px solid #777;
+            outline: none;
+            resize: none;
+            background: #ddd;
+            border: none;
         }
         button {
             font-size: 14px;
-            padding: 8px 10px;
+            padding: 5px 10px;
             color: #fff;
             font-weight: 600;
             text-align: center;
             text-transform: uppercase;
             cursor: pointer;
             border: none;
-            border-radius: 5px;
-            background: #B61F7E;
+            border-radius: 0px;
+            background: #5B2F9E;
         }
+    }
+    &__input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
     &__sub {
         font-size: 14px;
         font-weight: 600;
-        color: #777;
+        color: #5B2F9E;
         font-style: italic;
         text-align: center;
         margin-top: 10px;
+        a {
+            color: #B61F7E;
+        }
     }
     @media(max-width:320px) {
         &__desc {
