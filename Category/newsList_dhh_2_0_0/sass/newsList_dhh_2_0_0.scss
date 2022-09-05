@@ -16,14 +16,20 @@
         box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
         align-items: center;
         position: relative;
+        cursor: pointer;
     }
     &__pic {
         width: 40%;
         position: relative;
+        overflow: hidden;
         img {
             width: 100%;
             height: auto;
             display: block;
+            transition: all 0.2s linear;
+        }
+        img:hover {
+            transform: scale(1.05);
         }
     }
     &__note {
@@ -42,12 +48,18 @@
         font-weight: 600;
         text-align: justify;
         color: #b61F7E;
+        transition: all 0.2s linear;
     }
+    &__text:hover {
+        color: #461396;
+    }
+
     &__time {
         position: absolute;
         right: 15px;
         bottom: 5px;
     }
+
     &__des {
         font-size: 14px;
         padding: 10px 0;
@@ -69,6 +81,9 @@
             width: 100%;
             padding: 0 10px;
         }
+        &__text {
+            font-size: 14px;
+        }
     }
     @media (max-width: 375px) {
         &__title {
@@ -82,7 +97,7 @@
         }
         &__note {
             font-size: 13px;
-            padding: 7px;
+            padding: 7px ;
         }
     }
     @media (max-width: 320px) {

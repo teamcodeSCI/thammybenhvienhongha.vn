@@ -1,5 +1,5 @@
 .postOther_dhh_2_0_0 {
-  padding: 0 0 30px 0;
+  padding: 0 0 30px;
 }
 .postOther_dhh_2_0_0__box {
   display: flex;
@@ -19,6 +19,7 @@
   display: flex;
   gap: 10px;
   width: 48%;
+  cursor: pointer;
 }
 .postOther_dhh_2_0_0__news img {
   display: block;
@@ -38,6 +39,10 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  transition: all 0.2s linear;
+}
+.postOther_dhh_2_0_0__title:hover {
+  color: #461396;
 }
 .postOther_dhh_2_0_0__date {
   color: #727272;
@@ -45,7 +50,7 @@
 }
 @media (max-width: 767px) {
   .postOther_dhh_2_0_0 {
-    padding: 0 0 20px 0;
+    padding: 0 0 20px;
   }
   .postOther_dhh_2_0_0__news {
     width: 100%;

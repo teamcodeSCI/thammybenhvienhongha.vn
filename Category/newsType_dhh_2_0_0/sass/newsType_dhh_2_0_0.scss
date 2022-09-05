@@ -1,5 +1,5 @@
 .newsType_dhh_2_0_0 {
-    padding: 30px 0;
+    padding: 0 0 30px;
     &__title {
         font-size: 20px;
         font-weight: 600;
@@ -12,7 +12,7 @@
     &__box {
         display: flex;
         gap: 20px;
-        padding: 20px 0;
+        padding: 20px 0 0;
     }
     &__content {
         width: 50%;
@@ -21,10 +21,15 @@
     &__pic {
         width: 100%;
         position: relative;
+        overflow: hidden;
         img {
             width: 100%;
             height: auto;
             display: block;
+            transition: all 0.2s linear;
+        }
+        img:hover {
+            transform: scale(1.05);
         }
     }
     &__note {
@@ -37,11 +42,18 @@
     }
     &__text {
         font-weight: 600;
-        text-align: justify;
+        transition: all 0.2s linear;
+    }
+    &__text:hover {
+        color: #461396;
     }
     &__text-1 {
         padding: 10px 10px 0px 10px;
         color: #b61F7E;
+        transition: all 0.2s linear;
+    }
+    &__text-1:hover {
+        color: #461396;
     }
     &__des {
         font-size: 14px;
@@ -55,6 +67,7 @@
         align-items: center;
         gap: 10px;
         padding-bottom: 15px;
+        cursor: pointer;
     }
     &__image {
         img {
@@ -69,6 +82,7 @@
         }
     }
     @media (max-width: 767px) {
+        padding: 0 0 15px;
         &__box {
             flex-direction: column;
             gap: 20px;
@@ -80,6 +94,12 @@
         &__detail {
             width: 100%;
             gap: 15px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__text-1 {
+            font-size: 14px;
         }
     }
     @media (max-width: 375px) {

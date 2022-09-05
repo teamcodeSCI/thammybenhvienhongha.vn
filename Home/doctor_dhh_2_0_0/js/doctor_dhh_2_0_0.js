@@ -1,4 +1,5 @@
 const doctorInfo = [{
+    id: 'tabDoctors0',
     name: 'Dr Robert Nguyễn',
     img: 'Home/doctor_dhh_2_0_0/images/doctor-detail1.jpg',
     text: [
@@ -8,6 +9,7 @@ const doctorInfo = [{
         'Thực hiện thành công > 1000 ca PTTM mỗi năm'
     ]
 }, {
+    id: 'tabDoctors1',
     name: 'Dr Robert Nguyễn1',
     img: 'Home/doctor_dhh_2_0_0/images/doctor-detail1.jpg',
     text: [
@@ -17,6 +19,7 @@ const doctorInfo = [{
         'Thực hiện thành công > 1000 ca PTTM mỗi năm'
     ]
 }, {
+    id: 'tabDoctors2',
     name: 'Dr Robert Nguyễn2',
     img: 'Home/doctor_dhh_2_0_0/images/doctor-detail1.jpg',
     text: [
@@ -49,5 +52,6 @@ const tabDoctors = document.getElementsByClassName('doctor_dhh_2_0_0__tab');
 for (let i = 0; i < tabDoctors.length - 1; i++) {
     tabDoctors[i].addEventListener('click', () => {
         document.getElementById('doctor_dhh_2_0_0__content').innerHTML = infoTemp(doctorInfo[i])
+        tabDoctors[i].classList.add('doctor_dhh_2_0_0--active')
     })
 }

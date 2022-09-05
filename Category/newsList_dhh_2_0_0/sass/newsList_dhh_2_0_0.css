@@ -17,15 +17,21 @@
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 .newsList_dhh_2_0_0__pic {
   width: 40%;
   position: relative;
+  overflow: hidden;
 }
 .newsList_dhh_2_0_0__pic img {
   width: 100%;
   height: auto;
   display: block;
+  transition: all 0.2s linear;
+}
+.newsList_dhh_2_0_0__pic img:hover {
+  transform: scale(1.05);
 }
 .newsList_dhh_2_0_0__note {
   color: #fff;
@@ -43,6 +49,10 @@
   font-weight: 600;
   text-align: justify;
   color: #b61F7E;
+  transition: all 0.2s linear;
+}
+.newsList_dhh_2_0_0__text:hover {
+  color: #461396;
 }
 .newsList_dhh_2_0_0__time {
   position: absolute;
@@ -69,6 +79,9 @@
   .newsList_dhh_2_0_0__detail {
     width: 100%;
     padding: 0 10px;
+  }
+  .newsList_dhh_2_0_0__text {
+    font-size: 14px;
   }
 }
 @media (max-width: 375px) {

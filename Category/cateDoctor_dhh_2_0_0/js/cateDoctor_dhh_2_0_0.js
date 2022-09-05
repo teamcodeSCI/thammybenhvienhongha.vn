@@ -1,59 +1,60 @@
-const cateDoctor_dhh_2_0_0 = [{
-        img: "images/doctor.png",
-        name: "Dr. Robert Nguyễn",
-        profile: `    <ul>
+const cateDoctor_dhh_2_0_0 = [
+  {
+    img: "images/doctor.png",
+    name: "Dr. Robert Nguyễn",
+    profile: `    <ul>
           <li>-Chuyên gia hàng đầu trong lĩnh vực PTTM</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
       </ul>`,
-    },
-    {
-        img: "images/doctor.png",
-        name: "Dr. Tuấn Nguyễn",
-        profile: `    <ul>
+  },
+  {
+    img: "images/doctor.png",
+    name: "Dr. Tuấn Nguyễn",
+    profile: `    <ul>
           <li>-Chuyên gia hàng đầu trong lĩnh vực PTTM</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
       </ul>`,
-    },
-    {
-        img: "images/doctor.png",
-        name: "Dr. Hậu Nguyễn",
-        profile: `    <ul>
+  },
+  {
+    img: "images/doctor.png",
+    name: "Dr. Hậu Nguyễn",
+    profile: `    <ul>
           <li>-Chuyên gia hàng đầu trong lĩnh vực PTTM</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
       </ul>`,
-    },
-    {
-        img: "images/doctor.png",
-        name: "Dr. Đức Nguyễn",
-        profile: `    <ul>
+  },
+  {
+    img: "images/doctor.png",
+    name: "Dr. Đức Nguyễn",
+    profile: `    <ul>
           <li>-Chuyên gia hàng đầu trong lĩnh vực PTTM</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
       </ul>`,
-    }, ,
-    {
-        img: "images/doctor.png",
-        name: "Mr Định",
-        profile: `    <ul>
+  },
+  ,
+  {
+    img: "images/doctor.png",
+    name: "Mr Định",
+    profile: `    <ul>
           <li>-Chuyên gia hàng đầu trong lĩnh vực PTTM</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
           <li>-Thành viên hiệp hội PTTM Hàn Quốc</li>
       </ul>`,
-    },
+  },
 ];
-const doctorURL = `Category/cateDoctor_dhh_2_0_0/`
 let HTML = "";
-cateDoctor_dhh_2_0_0.forEach(function(doctor) {
-    HTML += `
-    <div class="cateDoctor_dhh_2_0_0__item">
+cateDoctor_dhh_2_0_0.forEach(function (doctor) {
+  HTML += `
+    <a href="" class="cateDoctor_dhh_2_0_0__item">
     <div class="cateDoctor_dhh_2_0_0__top">
-        <img width="372" height="384" src="${doctorURL}${doctor.img}" alt="">
+        <img width="372" height="384" src="${doctor.img}" alt="">
     </div>
     <div class="cateDoctor_dhh_2_0_0__bot">
         <p class="cateDoctor_dhh_2_0_0__name">
@@ -61,7 +62,7 @@ cateDoctor_dhh_2_0_0.forEach(function(doctor) {
         </p>
         ${doctor.profile}
     </div>
-</div>
+</a>
 `;
 });
 document.getElementById("cateDoctor_dhh_2_0_0__box").innerHTML = HTML;
