@@ -1,0 +1,127 @@
+@keyframes openModalAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes openBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.popReg_dhh_2_0_0 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    animation: openBackground 0.4s;
+    z-index: 100;
+    &__box {
+        position: relative;
+        background: #fff;
+        margin-top: 10vh;
+        padding: 20px 15px;
+        width: 90%;
+        max-width: 300px;
+        border-radius: 6px;
+        animation: openModalAnimation 0.4s;
+    }
+    &__logo {
+        margin-bottom: 10px;
+        img {
+            display: block;
+            width: 100%;
+            max-width: 220px;
+            margin: 0 auto;
+            height: auto;
+        }
+    }
+    &__close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+        img {
+            width: 20px;
+            height: auto;
+            display: block;
+        }
+    }
+    &__desc {
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        background: #B61F7E;
+        padding: 5px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto 0;
+        gap: 10px;
+        textarea,
+        input {
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 0px;
+            border: 1px solid #777;
+            outline: none;
+            resize: none;
+            background: #ddd;
+            border: none;
+        }
+        button {
+            font-size: 14px;
+            padding: 5px 10px;
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: none;
+            border-radius: 0px;
+            background: #5B2F9E;
+        }
+    }
+    &__input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    &__sub {
+        font-size: 14px;
+        font-weight: 600;
+        color: #5B2F9E;
+        font-style: italic;
+        text-align: center;
+        margin-top: 10px;
+        a {
+            color: #B61F7E;
+        }
+    }
+    @media(max-width:320px) {
+        &__desc {
+            font-size: 14px;
+        }
+    }
+}
