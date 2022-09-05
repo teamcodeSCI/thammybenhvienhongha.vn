@@ -70,6 +70,9 @@
     width: 100%;
     padding: 0 10px;
   }
+  .newsList_dhh_2_0_0__text {
+    font-size: 14px;
+  }
 }
 @media (max-width: 375px) {
   .newsList_dhh_2_0_0__title {

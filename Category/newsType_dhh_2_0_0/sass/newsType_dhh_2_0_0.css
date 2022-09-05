@@ -13,7 +13,7 @@
 .newsType_dhh_2_0_0__box {
   display: flex;
   gap: 20px;
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 .newsType_dhh_2_0_0__content {
   width: 50%;
@@ -38,7 +38,6 @@
 }
 .newsType_dhh_2_0_0__text {
   font-weight: 600;
-  text-align: justify;
 }
 .newsType_dhh_2_0_0__text-1 {
   padding: 10px 10px 0px 10px;
@@ -68,6 +67,9 @@
   }
 }
 @media (max-width: 767px) {
+  .newsType_dhh_2_0_0 {
+    padding: 15px 0;
+  }
   .newsType_dhh_2_0_0__box {
     flex-direction: column;
     gap: 20px;
@@ -79,6 +81,12 @@
   .newsType_dhh_2_0_0__detail {
     width: 100%;
     gap: 15px;
+  }
+  .newsType_dhh_2_0_0__text {
+    font-size: 14px;
+  }
+  .newsType_dhh_2_0_0__text-1 {
+    font-size: 14px;
   }
 }
 @media (max-width: 375px) {
