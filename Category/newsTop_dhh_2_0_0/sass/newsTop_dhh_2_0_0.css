@@ -18,6 +18,7 @@
 }
 .newsTop_dhh_2_0_0__item {
   width: 48%;
+  cursor: pointer;
 }
 .newsTop_dhh_2_0_0__pic {
   position: relative;
@@ -44,7 +45,7 @@
 .newsTop_dhh_2_0_0__text {
   font-weight: 600;
   color: #b61F7E;
-  padding: 10px 0 0;
+  padding: 10px 10px 0;
   transition: all 0.2s linear;
 }
 .newsTop_dhh_2_0_0__text:hover {

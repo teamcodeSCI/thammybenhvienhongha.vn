@@ -16,6 +16,7 @@
         box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
         align-items: center;
         position: relative;
+        cursor: pointer;
     }
     &__pic {
         width: 40%;
@@ -52,11 +53,13 @@
     &__text:hover {
         color: #461396;
     }
+
     &__time {
         position: absolute;
         right: 15px;
         bottom: 5px;
     }
+
     &__des {
         font-size: 14px;
         padding: 10px 0;
@@ -94,7 +97,7 @@
         }
         &__note {
             font-size: 13px;
-            padding: 7px;
+            padding: 7px ;
         }
     }
     @media (max-width: 320px) {

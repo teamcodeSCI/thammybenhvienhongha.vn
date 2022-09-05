@@ -17,6 +17,7 @@
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 .newsList_dhh_2_0_0__pic {
   width: 40%;
