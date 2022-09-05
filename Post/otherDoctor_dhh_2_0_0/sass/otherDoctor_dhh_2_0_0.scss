@@ -7,10 +7,15 @@
         background: #ebdeef;
     }
     &__img {
+        overflow: hidden;
         img {
             width: 100%;
             height: auto;
             display: block;
+            transition: all 0.2s linear;
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
     &__info {
@@ -24,6 +29,10 @@
     &__name {
         font-weight: 600;
         color: #5b2f9e;
+        transition: all 0.2s linear;
+        &:hover {
+            color: #B61F7E;
+        }
     }
     @media(max-width:767px) {
         padding: 15px 0;
