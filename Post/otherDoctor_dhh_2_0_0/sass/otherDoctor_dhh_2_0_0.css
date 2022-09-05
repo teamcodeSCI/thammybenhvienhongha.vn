@@ -7,10 +7,17 @@
 .otherDoctor_dhh_2_0_0__item {
   background: #ebdeef;
 }
+.otherDoctor_dhh_2_0_0__img {
+  overflow: hidden;
+}
 .otherDoctor_dhh_2_0_0__img img {
   width: 100%;
   height: auto;
   display: block;
+  transition: all 0.2s linear;
+}
+.otherDoctor_dhh_2_0_0__img img:hover {
+  transform: scale(1.05);
 }
 .otherDoctor_dhh_2_0_0__info {
   padding: 10px;
@@ -23,6 +30,10 @@
 .otherDoctor_dhh_2_0_0__name {
   font-weight: 600;
   color: #5b2f9e;
+  transition: all 0.2s linear;
+}
+.otherDoctor_dhh_2_0_0__name:hover {
+  color: #B61F7E;
 }
 @media (max-width: 767px) {
   .otherDoctor_dhh_2_0_0 {
