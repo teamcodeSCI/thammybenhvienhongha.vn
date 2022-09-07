@@ -4,12 +4,14 @@
 .newsType_dhh_2_0_0__title {
   font-size: 20px;
   font-weight: 600;
-  color: #b61F7E;
   text-align: left;
   text-transform: uppercase;
   padding-bottom: 10px;
   border-bottom: 2px solid #b61F7E;
   margin: 0;
+}
+.newsType_dhh_2_0_0__title a {
+  color: #b61F7E;
 }
 .newsType_dhh_2_0_0__box {
   display: flex;

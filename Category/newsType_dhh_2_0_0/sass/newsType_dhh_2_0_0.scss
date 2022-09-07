@@ -3,12 +3,14 @@
     &__title {
         font-size: 20px;
         font-weight: 600;
-        color: #b61F7E;
         text-align: left;
         text-transform: uppercase;
         padding-bottom: 10px;
         border-bottom: 2px solid #b61F7E;
         margin: 0;
+        a {
+            color: #b61F7E;
+        }
     }
     &__box {
         display: flex;
@@ -117,7 +119,7 @@
         }
         &__note {
             font-size: 13px;
-            padding: 7px ;
+            padding: 7px;
         }
     }
     @media (max-width: 320px) {
