@@ -27,20 +27,12 @@
 }
 .postOther_dhh_2_0_0__left {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .postOther_dhh_2_0_0__title {
   color: black;
   font-weight: 600;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
   transition: all 0.2s linear;
-  font-size: unset;
+  font-size: 14px;
   margin: 0;
   margin-bottom: 5px;
 }
