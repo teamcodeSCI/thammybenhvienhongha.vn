@@ -1,5 +1,5 @@
 .newsType_dhh_2_0_0 {
-  padding: 0 0 30px;
+  padding: 30px 0 0;
 }
 .newsType_dhh_2_0_0__title {
   font-size: 20px;
@@ -9,6 +9,7 @@
   text-transform: uppercase;
   padding-bottom: 10px;
   border-bottom: 2px solid #b61F7E;
+  margin: 0;
 }
 .newsType_dhh_2_0_0__box {
   display: flex;
@@ -44,6 +45,8 @@
 .newsType_dhh_2_0_0__text {
   font-weight: 600;
   transition: all 0.2s linear;
+  margin: 0;
+  font-size: 15px;
 }
 .newsType_dhh_2_0_0__text:hover {
   color: #461396;
@@ -82,7 +85,7 @@
 }
 @media (max-width: 767px) {
   .newsType_dhh_2_0_0 {
-    padding: 0 0 15px;
+    padding: 15px 0;
   }
   .newsType_dhh_2_0_0__box {
     flex-direction: column;

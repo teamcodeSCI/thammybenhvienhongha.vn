@@ -57,9 +57,9 @@ cateDoctor_dhh_2_0_0.forEach(function (doctor) {
         <img width="372" height="384" src="${doctor.img}" alt="">
     </div>
     <div class="cateDoctor_dhh_2_0_0__bot">
-        <p class="cateDoctor_dhh_2_0_0__name">
+        <h2 class="cateDoctor_dhh_2_0_0__name">
             ${doctor.name}
-        </p>
+        </h2>
         ${doctor.profile}
     </div>
 </a>
