@@ -9,6 +9,7 @@
   text-transform: uppercase;
   padding-bottom: 10px;
   border-bottom: 2px solid #b61F7E;
+  margin: 0;
 }
 .newsList_dhh_2_0_0__item {
   display: flex;
@@ -50,6 +51,8 @@
   text-align: justify;
   color: #b61F7E;
   transition: all 0.2s linear;
+  font-size: 15px;
+  margin: 0;
 }
 .newsList_dhh_2_0_0__text:hover {
   color: #461396;

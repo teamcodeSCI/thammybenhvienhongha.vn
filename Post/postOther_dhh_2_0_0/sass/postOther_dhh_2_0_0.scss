@@ -39,6 +39,9 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         transition: all 0.2s linear;
+        font-size: unset;
+        margin: 0;
+        margin-bottom: 5px;
     }
     &__title:hover {
         color: #461396;

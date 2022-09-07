@@ -6,6 +6,13 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-top: 20px;
+}
+.cateDoctor_dhh_2_0_0__heading {
+  margin: 0;
+  font-size: 24px;
+  color: #b61f7e;
+  font-weight: 500;
 }
 .cateDoctor_dhh_2_0_0__item {
   width: 31%;
@@ -64,6 +71,10 @@
   }
   .cateDoctor_dhh_2_0_0__box {
     gap: 10px;
+    margin-top: 10px;
+  }
+  .cateDoctor_dhh_2_0_0__heading {
+    font-size: 17px;
   }
   .cateDoctor_dhh_2_0_0__bot {
     padding: 10px;
