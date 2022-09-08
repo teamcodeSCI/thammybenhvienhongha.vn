@@ -55,11 +55,16 @@
 }
 .doctor_dhh_2_0_0__img {
   width: 40%;
+  overflow: hidden;
 }
 .doctor_dhh_2_0_0__img img {
   width: 100%;
   height: auto;
   display: block;
+  transition: all 0.2s linear;
+}
+.doctor_dhh_2_0_0__img img:hover {
+  transform: scale(1.05);
 }
 .doctor_dhh_2_0_0__text {
   width: 60%;

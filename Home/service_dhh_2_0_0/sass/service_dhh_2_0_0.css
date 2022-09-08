@@ -45,7 +45,7 @@
   overflow: hidden;
 }
 .service_dhh_2_0_0__item:hover img {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 .service_dhh_2_0_0__item img {
   width: 100%;
@@ -67,14 +67,22 @@
   justify-content: space-between;
   padding: 10px 15px;
 }
-.service_dhh_2_0_0__desc span {
+.service_dhh_2_0_0__desc::after {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  content: "";
+  background: url(../images/service-icon.svg) center 0 no-repeat;
+  background-size: 13px;
+  width: 13px;
+  height: 20px;
+}
+.service_dhh_2_0_0__text {
   font-size: 16px;
   font-weight: 600;
   color: #B61F7E;
   text-transform: uppercase;
-}
-.service_dhh_2_0_0__desc img {
-  width: 13px;
+  margin: 0;
 }
 .service_dhh_2_0_0__btn {
   text-align: center;
@@ -141,11 +149,13 @@
   .service_dhh_2_0_0__modal {
     display: none;
   }
-  .service_dhh_2_0_0__desc span {
-    font-size: 14px;
+  .service_dhh_2_0_0__desc::after {
+    background-size: 9px;
+    right: 10px;
+    bottom: 7px;
   }
-  .service_dhh_2_0_0__desc img {
-    width: 9px;
+  .service_dhh_2_0_0__text {
+    font-size: 14px;
   }
   .service_dhh_2_0_0__btn {
     margin-top: 10px;
@@ -162,7 +172,12 @@
   .service_dhh_2_0_0__desc {
     padding: 5px 10px;
   }
-  .service_dhh_2_0_0__desc span {
+  .service_dhh_2_0_0__desc::after {
+    background-size: 9px;
+    right: 7px;
+    bottom: 1px;
+  }
+  .service_dhh_2_0_0__text {
     font-size: 12px;
   }
 }/*# sourceMappingURL=service_dhh_2_0_0.css.map */

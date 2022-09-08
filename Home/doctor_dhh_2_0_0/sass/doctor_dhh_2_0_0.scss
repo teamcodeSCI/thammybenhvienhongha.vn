@@ -54,10 +54,15 @@
     }
     &__img {
         width: 40%;
+        overflow: hidden;
         img {
             width: 100%;
             height: auto;
             display: block;
+            transition: all 0.2s linear;
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
     &__text {
