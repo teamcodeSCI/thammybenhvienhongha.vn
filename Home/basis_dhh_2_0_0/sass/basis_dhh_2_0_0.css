@@ -74,6 +74,7 @@
 }
 .basis_dhh_2_0_0__text button:hover {
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.7);
+  background: #B61F7E;
 }
 .basis_dhh_2_0_0__video {
   position: relative;
