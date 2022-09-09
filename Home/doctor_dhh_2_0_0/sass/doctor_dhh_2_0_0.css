@@ -27,14 +27,23 @@
 }
 .doctor_dhh_2_0_0__video span {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  transition: all 0.2s linear;
+  background: rgba(182, 31, 126, 0.4);
+}
+.doctor_dhh_2_0_0__video span:hover {
+  background: rgba(182, 31, 126, 0);
 }
 .doctor_dhh_2_0_0__video span img {
   width: 50%;
-  min-width: 30px;
+  max-width: 75px;
   margin: 0 auto;
   height: auto;
   border-radius: 50%;
@@ -91,12 +100,10 @@
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  border: 2px solid transparent;
   cursor: pointer;
-  transition: all 0.2s linear;
 }
-.doctor_dhh_2_0_0__tab:hover {
-  border: 2px solid #B61F7E;
+.doctor_dhh_2_0_0__tab:hover span {
+  opacity: 0;
 }
 .doctor_dhh_2_0_0__tab img {
   width: 100%;
@@ -105,12 +112,19 @@
 }
 .doctor_dhh_2_0_0__tab span {
   position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px 5px;
+  background: rgba(182, 31, 126, 0.4);
   text-align: center;
   font-size: 14px;
-  display: block;
-  bottom: 10px;
-  width: 100%;
   color: #fff;
+  transition: all 0.2s linear;
 }
 .doctor_dhh_2_0_0--active {
   border: 2px solid #B61F7E;
