@@ -85,14 +85,25 @@
     }
     &__play {
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s linear;
+        background: rgba(182, 31, 126, 0.4);
+        &:hover {
+            background: rgba(182, 31, 126, 0);
+        }
         img {
-            width: 60%;
-            min-width: 40px;
-            border-radius: 50%;
+            width: 50%;
+            max-width: 75px;
             margin: 0 auto;
+            height: auto;
+            border-radius: 50%;
         }
     }
     &__right {
