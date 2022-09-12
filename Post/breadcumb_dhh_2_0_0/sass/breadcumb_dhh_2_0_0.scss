@@ -1,13 +1,11 @@
-.breadcumb_dhh_2_0_0 {
-    margin: 30px 0 0;
+.breadcrumb_dhh_2_0_0 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #BCBCBC;
+    margin-top: 30px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #bcbcbc;
-    span {
-        color: #bcbcbc;
-        text-transform: uppercase;
-        font-weight: 500;
-    }
+    border-bottom: 1px solid #BCBCBC;
     a {
-        color: #bcbcbc;
+        color: #BCBCBC;
     }
 }

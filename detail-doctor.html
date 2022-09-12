@@ -253,11 +253,15 @@
         <div class="row">
             <div class="col-lg-8">
                 <link rel="stylesheet" href="Post/breadcumb_dhh_2_0_0/sass/breadcumb_dhh_2_0_0.css">
-                <div class="breadcumb_dhh_2_0_0">
-                    <span>
-                        <span><a href="#">Trang chủ</a> /<span>
-                        <a href="#">Thẩm mỹ da</a> /
-                        <span>abc</span>
+                <div class="breadcrumb_dhh_2_0_0">
+                    <span xmlns:v="http://rdf.data-vocabulary.org/#">
+                            <span typeof="v:Breadcrumb">
+                                <a property="v:title" rel="v:url" href="#">Trang chủ</a> /
+                                <span typeof="v:Breadcrumb" rel="v:child">
+                                    <a property="v:title" rel="v:url" href="#">Thẩm mỹ da</a>
+                                    <span class="breadcrumb_last"></span>
+                    </span>
+                    </span>
                     </span>
                 </div>
                 <section class="detailDoctor_dhh_2_0_0">
