@@ -1,5 +1,5 @@
 .header_dhh_2_0_0 {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,7 +33,6 @@
     &__link {
         font-size: 16px;
         padding: 10px 10px;
-
         font-weight: 600;
         cursor: pointer;
         color: white;
@@ -90,7 +89,6 @@
             }
         }
     }
-
     &__item:hover {
         .header_dhh_2_0_0__dropdown {
             display: flex;
@@ -190,7 +188,6 @@
         .show {
             transform: translateX(0);
         }
-
         &__item {
             width: 100%;
             padding: 8px 0;
@@ -204,7 +201,6 @@
             right: 10px;
             font-size: 25px;
         }
-
         &__item:hover {
             .header_dhh_2_0_0__dropdown {
                 display: none;
@@ -214,7 +210,6 @@
                 background-color: unset;
             }
         }
-
         &__item.open .header_dhh_2_0_0__dropdown {
             display: block;
         }
