@@ -10,6 +10,13 @@
   padding: 20px 0 10px;
   z-index: 20;
 }
+.header_dhh_2_0_0--active {
+  background: linear-gradient(90deg, rgba(91, 47, 158, 0.75) 5%, rgba(182, 31, 126, 0.75) 21%, rgba(91, 47, 158, 0.75) 80%);
+  transition: all 0.2s linear;
+}
+.header_dhh_2_0_0--active:hover {
+  background: linear-gradient(90deg, rgb(91, 47, 158) 5%, rgb(182, 31, 126) 21%, rgb(91, 47, 158) 80%);
+}
 .header_dhh_2_0_0__box {
   display: flex;
   justify-content: space-between;
@@ -34,7 +41,7 @@
   padding: 10px 5px;
 }
 .header_dhh_2_0_0__link {
-  font-size: 16px;
+  font-size: 15px;
   padding: 10px 10px;
   font-weight: 600;
   cursor: pointer;
