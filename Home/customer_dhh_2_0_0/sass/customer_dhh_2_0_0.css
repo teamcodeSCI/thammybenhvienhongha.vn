@@ -82,7 +82,6 @@
 }
 @media (max-width: 767px) {
   .customer_dhh_2_0_0 {
-    background-size: 540px;
     padding: 20px 0;
   }
   .customer_dhh_2_0_0__header {
@@ -96,9 +95,14 @@
     width: 100%;
   }
 }
+@media (max-width: 428px) {
+  .customer_dhh_2_0_0 {
+    background-size: 540px;
+  }
+}
 @media (max-width: 320px) {
   .customer_dhh_2_0_0 span {
-    margin: 0 10px;
-    font-size: 16px;
+    margin: 0 5px;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=customer_dhh_2_0_0.css.map */

@@ -51,6 +51,9 @@ document.getElementById('doctor_dhh_2_0_0__content').innerHTML = infoTemp(doctor
 const tabDoctors = document.getElementsByClassName('doctor_dhh_2_0_0__tab');
 for (let i = 0; i < tabDoctors.length - 1; i++) {
     tabDoctors[i].addEventListener('click', () => {
+        for (let i = 0; i < tabDoctors.length - 1; i++) {
+            tabDoctors[i].classList.remove('doctor_dhh_2_0_0--active');
+        }
         document.getElementById('doctor_dhh_2_0_0__content').innerHTML = infoTemp(doctorInfo[i])
         tabDoctors[i].classList.add('doctor_dhh_2_0_0--active')
     })

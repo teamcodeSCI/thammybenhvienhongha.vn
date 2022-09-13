@@ -1,10 +1,10 @@
 .news_dhh_2_0_0 {
-    padding: 30px 0;
+    padding: 40px 0;
     &__header {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         span {
             display: block;
             color: #B61F7E;
@@ -24,7 +24,7 @@
     &__box {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 30px;
     }
     &__item {
         width: 33%;
