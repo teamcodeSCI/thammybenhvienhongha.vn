@@ -125,7 +125,7 @@
   transition: all 0.2s linear;
 }
 .service_dhh_2_0_0__btn button:hover {
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
   background: #B61F7E;
 }
 .service_dhh_2_0_0__btn button:hover::before {
