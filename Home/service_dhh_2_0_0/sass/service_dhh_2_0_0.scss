@@ -3,7 +3,7 @@
     background-size: 1920px;
     &__main {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: flex-end;
     }
     &__wrapper {
@@ -90,18 +90,50 @@
         text-align: center;
         margin-top: 20px;
         button {
+            position: relative;
             font-size: 16px;
             font-weight: 600;
-            padding: 10px 20px;
+            padding: 10px 30px;
             border-radius: 20px;
             border: none;
             background: #5B2F9E;
             color: #fff;
             cursor: pointer;
             transition: all 0.2s linear;
+            overflow: hidden;
+            &::before {
+                content: '';
+                position: absolute;
+                background: url(../images/btn-icon1.svg)center 0 no-repeat;
+                background-size: 100%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 110px;
+                transition: all 0.2s linear;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                background: url(../images/btn-icon2.svg)center 0 no-repeat;
+                background-size: 100%;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 110px;
+                transition: all 0.2s linear;
+            }
             &:hover {
                 box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.7);
                 background: #B61F7E;
+                &::before {
+                    background: url(../images/btn-icon1-hv.svg)center 0 no-repeat;
+                    background-size: 100%;
+                }
+                &::after {
+                    background: url(../images/btn-icon2-hv.svg)center 0 no-repeat;
+                    background-size: 100%;
+                }
             }
         }
         span {
@@ -166,7 +198,13 @@
             margin-top: 10px;
             button {
                 font-size: 14px;
-                padding: 5px 20px;
+                padding: 5px 25px;
+                &::before {
+                    width: 75px;
+                }
+                &::after {
+                    width: 75px;
+                }
             }
             span {
                 font-size: 13px;

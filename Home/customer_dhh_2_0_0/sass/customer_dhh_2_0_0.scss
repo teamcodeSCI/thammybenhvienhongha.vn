@@ -1,28 +1,23 @@
 .customer_dhh_2_0_0 {
-    padding: 0 0 30px;
+    padding: 50px 0;
+    background: url(../images/customer-bg.jpg) center 0 no-repeat;
+    background-size: 1920px;
     &__header {
-        background: url(../images/customer-bg.jpg) center 0 no-repeat;
-        background-size: 1920px;
-        min-height: 250px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-bottom: 50px;
         span {
             display: block;
-            padding: 20px;
+            margin: 0 auto;
+            width: fit-content;
+            padding: 20px 50px;
             border: 2px solid #8859C7;
             text-align: center;
-            font-size: 24px;
+            font-size: 32px;
             text-transform: uppercase;
             color: #8859C7;
-            ;
             b {
                 display: block;
             }
         }
-    }
-    &__wrapper {
-        margin-top: -47px;
     }
     &__box {
         display: flex;
@@ -62,22 +57,33 @@
             }
         }
     }
+    @media(max-width:1440px) {
+        background-size: 1440px;
+    }
+    @media(max-width:1180px) {
+        background-size: 1180px;
+        padding: 30px 0;
+        &__header {
+            margin-bottom: 30px;
+            span {
+                font-size: 26px;
+            }
+        }
+    }
     @media(max-width: 912px) {
         &__box {
             width: 90%;
         }
     }
     @media(max-width: 767px) {
+        background-size: 540px;
+        padding: 20px 0;
         &__header {
-            background-size: 700px;
-            min-height: 180px;
+            margin-bottom: 20px;
             span {
-                padding: 10px 5px;
+                padding: 10px;
                 font-size: 17px;
             }
-        }
-        &__wrapper {
-            margin-top: -40px;
         }
         &__box {
             width: 100%;
