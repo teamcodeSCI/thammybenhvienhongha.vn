@@ -66,6 +66,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
+  background: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0.8) 54%, rgba(255, 255, 255, 0) 100%);
 }
 .service_dhh_2_0_0__desc::after {
   position: absolute;
