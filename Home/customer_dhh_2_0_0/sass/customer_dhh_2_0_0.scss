@@ -47,14 +47,73 @@
         }
     }
     &__item {
+        position: relative;
         overflow: hidden;
+        span {
+            position: absolute;
+            background: #8859C7;
+            transition: all 0.2s linear;
+            z-index: 1;
+        }
         img {
             transition: all 0.2s linear;
         }
         &:hover {
+            .customer_dhh_2_0_0__border {
+                &Top {
+                    top: 0;
+                    left: 0;
+                    height: 5px;
+                    width: 100%;
+                }
+                &Right {
+                    right: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 5px;
+                }
+                &Bot {
+                    right: 0;
+                    bottom: 0;
+                    height: 5px;
+                    width: 100%
+                }
+                &Left {
+                    left: 0;
+                    bottom: 0;
+                    height: 100%;
+                    width: 5px
+                }
+            }
             img {
                 transform: scale(1.05);
             }
+        }
+    }
+    &__border {
+        &Top {
+            top: 0;
+            left: 0;
+            height: 5px;
+            width: 0;
+        }
+        &Right {
+            right: 0;
+            top: 0;
+            height: 0;
+            width: 5px;
+        }
+        &Bot {
+            right: 0;
+            bottom: 0;
+            height: 5px;
+            width: 0
+        }
+        &Left {
+            left: 0;
+            bottom: 0;
+            height: 0;
+            width: 5px
         }
     }
     @media(max-width:1440px) {
