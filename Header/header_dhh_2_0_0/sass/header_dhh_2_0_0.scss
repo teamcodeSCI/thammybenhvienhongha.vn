@@ -89,7 +89,7 @@
                 padding-bottom: 8px;
                 margin-bottom: 7px;
                 &:hover a {
-                    color: #0056a4;
+                    color: #b5207e;
                 }
             }
         }
@@ -146,7 +146,7 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 50%;
-                margin-right: 5px;
+                margin-right: 8px;
             }
             button {
                 background: rgba(238, 238, 238, 0);
@@ -233,14 +233,10 @@
                 margin: 0;
                 ul {
                     li {
-                        // border-bottom: 1px  #51abff;
                         &:hover {
                             a {
                                 color: black;
                             }
-                        }
-                        a {
-                            color: #0056a4;
                         }
                     }
                 }
