@@ -1,10 +1,10 @@
 .news_dhh_2_0_0 {
-    padding: 40px 0;
+    padding: 50px 0;
     &__header {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         span {
             display: block;
             color: #B61F7E;
@@ -24,7 +24,7 @@
     &__box {
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 60px;
     }
     &__item {
         width: 33%;
@@ -58,10 +58,19 @@
             color: #461396;
         }
     }
-    @media(max-width: 767px) {
-        padding: 20px 0;
+    @media(max-width:912px) {
+        padding: 40px 0;
         &__header {
-            margin-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        &__box {
+            gap: 30px;
+        }
+    }
+    @media(max-width: 767px) {
+        padding: 40px 0;
+        &__header {
+            margin-bottom: 20px;
             span {
                 font-size: 17px;
                 min-width: 160px;
@@ -70,7 +79,7 @@
         }
         &__box {
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
         }
         &__title {
             font-size: 16px;

@@ -1,5 +1,5 @@
 .basis_dhh_2_0_0 {
-    padding: 40px 0 0;
+    padding: 60px 0 0;
     &__header {
         text-transform: uppercase;
         text-align: center;
@@ -159,6 +159,7 @@
         }
     }
     @media(max-width: 912px) {
+        padding: 40px 0 0;
         &__text {
             span {
                 padding: 5px;
@@ -180,7 +181,7 @@
         }
     }
     @media(max-width: 767px) {
-        padding: 20px 0;
+        padding: 40px 0 0;
         &__header {
             font-size: 16px;
             margin-bottom: 10px;

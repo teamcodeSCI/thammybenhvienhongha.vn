@@ -55,7 +55,7 @@
 }
 .customer_dhh_2_0_0__item span {
   position: absolute;
-  background: #8859C7;
+  background: #b24dff;
   transition: all 0.2s linear;
   z-index: 1;
 }
@@ -137,7 +137,7 @@
 }
 @media (max-width: 767px) {
   .customer_dhh_2_0_0 {
-    padding: 20px 0;
+    padding: 30px 0;
   }
   .customer_dhh_2_0_0__header {
     margin-bottom: 20px;
@@ -157,7 +157,6 @@
 }
 @media (max-width: 320px) {
   .customer_dhh_2_0_0 span {
-    margin: 0 5px;
     font-size: 15px;
   }
 }/*# sourceMappingURL=customer_dhh_2_0_0.css.map */

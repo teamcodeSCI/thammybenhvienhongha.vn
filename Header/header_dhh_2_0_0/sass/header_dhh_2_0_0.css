@@ -43,7 +43,6 @@
 .header_dhh_2_0_0__link {
   font-size: 15px;
   padding: 10px 10px;
-  font-weight: 600;
   cursor: pointer;
   color: white;
 }
@@ -144,8 +143,8 @@
   }
   .header_dhh_2_0_0__btnGroup a {
     border: 1px solid white;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -155,8 +154,8 @@
   .header_dhh_2_0_0__btnGroup button {
     background: rgba(238, 238, 238, 0);
     border: 1px solid white;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -247,8 +246,11 @@
   .header_dhh_2_0_0__logo img {
     max-width: 130px;
   }
-}
-@media (max-width: 280px) {
+  .header_dhh_2_0_0__btnGroup button,
+.header_dhh_2_0_0__btnGroup a {
+    width: 30px;
+    height: 30px;
+  }
   .header_dhh_2_0_0 .container {
     padding-right: 10px;
     padding-left: 10px;

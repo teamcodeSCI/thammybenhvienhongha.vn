@@ -40,7 +40,6 @@
     &__link {
         font-size: 15px;
         padding: 10px 10px;
-        font-weight: 600;
         cursor: pointer;
         color: white;
     }
@@ -141,8 +140,8 @@
             display: flex;
             a {
                 border: 1px solid white;
-                width: 35px;
-                height: 35px;
+                width: 40px;
+                height: 40px;
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
@@ -152,8 +151,8 @@
             button {
                 background: rgba(238, 238, 238, 0);
                 border: 1px solid white;
-                width: 35px;
-                height: 35px;
+                width: 40px;
+                height: 40px;
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
@@ -260,8 +259,13 @@
                 max-width: 130px;
             }
         }
-    }
-    @media (max-width: 280px) {
+        &__btnGroup {
+            button,
+            a {
+                width: 30px;
+                height: 30px;
+            }
+        }
         .container {
             padding-right: 10px;
             padding-left: 10px;
