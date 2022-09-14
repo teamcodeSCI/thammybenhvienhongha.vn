@@ -28,6 +28,16 @@ const doctorInfo = [{
         '15 năm kinh nghiệm PTTM tạo hình khuôn mặt và vóc dáng',
         'Thực hiện thành công > 1000 ca PTTM mỗi năm'
     ]
+}, {
+    id: 'tabDoctors3',
+    name: 'Dr Robert Nguyễn3',
+    img: 'Home/doctor_dhh_2_0_0/images/doctor-detail1.jpg',
+    text: [
+        'Chuyên gia hàng đầu trong lĩnh vực PTTM3',
+        'Thành viên Hiệp hội PTTM Hàn Quốc',
+        '15 năm kinh nghiệm PTTM tạo hình khuôn mặt và vóc dáng',
+        'Thực hiện thành công > 1000 ca PTTM mỗi năm'
+    ]
 }]
 const infoTemp = (props) => {
     let text = ''
@@ -49,9 +59,9 @@ const infoTemp = (props) => {
 document.getElementById('doctor_dhh_2_0_0__content').innerHTML = infoTemp(doctorInfo[0])
 
 const tabDoctors = document.getElementsByClassName('doctor_dhh_2_0_0__tab');
-for (let i = 0; i < tabDoctors.length - 1; i++) {
+for (let i = 0; i < tabDoctors.length; i++) {
     tabDoctors[i].addEventListener('click', () => {
-        for (let i = 0; i < tabDoctors.length - 1; i++) {
+        for (let i = 0; i < tabDoctors.length; i++) {
             tabDoctors[i].classList.remove('doctor_dhh_2_0_0--active');
         }
         document.getElementById('doctor_dhh_2_0_0__content').innerHTML = infoTemp(doctorInfo[i])
