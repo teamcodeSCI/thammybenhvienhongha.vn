@@ -169,17 +169,17 @@
     @media(max-width: 767px) {
         &__wrapper {
             width: 100%;
-            padding: 20px 0;
+            padding: 30px 0;
         }
         &__header {
             font-size: 14px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             span {
                 font-size: 17px;
             }
         }
         &__box {
-            gap: 10px;
+            gap: 15px;
         }
         &__modal {
             display: none;
@@ -195,7 +195,7 @@
             font-size: 14px;
         }
         &__btn {
-            margin-top: 10px;
+            margin-top: 15px;
             button {
                 font-size: 14px;
                 padding: 5px 25px;

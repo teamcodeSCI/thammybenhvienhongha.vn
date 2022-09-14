@@ -34,11 +34,6 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s linear;
-  background: rgba(182, 31, 126, 0.6);
-}
-.doctor_dhh_2_0_0__video span:hover {
-  background: rgba(182, 31, 126, 0.3);
 }
 .doctor_dhh_2_0_0__video span img {
   width: 50%;
@@ -46,6 +41,11 @@
   margin: 0 auto;
   height: auto;
   border-radius: 50%;
+  opacity: 0.8;
+  transition: all 0.2s linear;
+}
+.doctor_dhh_2_0_0__video span img:hover {
+  opacity: 0.9;
 }
 .doctor_dhh_2_0_0__right {
   width: 73%;
@@ -144,15 +144,15 @@
 }
 @media (max-width: 767px) {
   .doctor_dhh_2_0_0 {
-    padding: 20px 0;
+    padding: 30px 0;
   }
   .doctor_dhh_2_0_0__header {
     font-size: 17px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .doctor_dhh_2_0_0__box {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
   .doctor_dhh_2_0_0__video {
     order: 1;
@@ -161,7 +161,7 @@
   }
   .doctor_dhh_2_0_0__right {
     width: 100%;
-    gap: 10px;
+    gap: 15px;
   }
   .doctor_dhh_2_0_0__tabs {
     gap: 10px;

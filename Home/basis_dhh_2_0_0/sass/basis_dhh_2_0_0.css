@@ -1,5 +1,5 @@
 .basis_dhh_2_0_0 {
-  padding: 40px 0 0;
+  padding: 60px 0 0;
 }
 .basis_dhh_2_0_0__header {
   text-transform: uppercase;
@@ -160,6 +160,9 @@
   transform: scale(1.05);
 }
 @media (max-width: 912px) {
+  .basis_dhh_2_0_0 {
+    padding: 40px 0 0;
+  }
   .basis_dhh_2_0_0__text span {
     padding: 5px;
     font-size: 12px;
@@ -180,7 +183,7 @@
 }
 @media (max-width: 767px) {
   .basis_dhh_2_0_0 {
-    padding: 20px 0;
+    padding: 40px 0 0;
   }
   .basis_dhh_2_0_0__header {
     font-size: 16px;
